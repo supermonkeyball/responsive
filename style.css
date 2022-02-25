@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+}
+
+/* mobile */
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: salmon;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 1024px) {
+  .container {
+    background-color: salmon;
+  }
+}
+
