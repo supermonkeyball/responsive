@@ -19,10 +19,7 @@ body {
   }
 }
 
-/* tablet */
-@media screen and (min-width: 1024px) {
-  .container {
-    background-color: salmon;
-  }
+.hide-mobile {
+  
 }
 
