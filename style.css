@@ -81,8 +81,8 @@ body {
 
 img {
   width: 100%;
-  -webkit-filter: blur(0px);
   border-radius: 20px;
+  background: none;
 }
 
 @keyframes lol {
@@ -102,12 +102,11 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  display: none;
 }
 
 .modal-content {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -121,11 +120,13 @@ img {
 
 .close-button {
   position: absolute;
-  right: 1%;
-  width: 1.5rem;
-  padding: 0.2em;
+  right: 1.5%;
   cursor: pointer;
-  border-radius: 0.25rem;
+  height: .75rem;
+  width: .60rem;
+  padding: 1.2%;
+  padding-top: 0.70%;
+  border-radius: 1rem;
   background-color: lightgray;
   display: flex;
   align-items: center;
@@ -138,8 +139,9 @@ img {
 
 .show-modal {
   opacity: 1;
-  visibility: visible;
+  display: flex;
   transform: scale(1);
+  overflow: hidden;
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
