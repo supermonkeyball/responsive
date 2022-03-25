@@ -14,13 +14,40 @@
       </div>
       <div class="block">
         <div class="menu">
-      <div class="item"><div class="profile"><img src="https://cdn.discordapp.com/attachments/951357016180391936/956761284186107954/IMG_1246.jpg"></div></div>
+      <div class="item"><div class="profile"></div></div>
       <div class="item"><div class="profile"><img src="https://cdn.discordapp.com/attachments/951357016180391936/956761283917660200/IMG_1245.jpg"></div></div>
-      <div class="item">item 3</div>
+      <div class="item">
+	<button class="trigger"><img src="https://cdn.discordapp.com/attachments/951357016180391936/956761284186107954/IMG_1246.jpg"></button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Hello, I am a modal!</h1>
+    </div>
+</div> 
+      </div>
       <div class="item">item 4</div>
       <div class="item">item 5</div>
       <div class="item">item 6</div>
       </div>
-        </div></div>
+      </div>
+          </div>
+          <script>	const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick); 
+</script>
   </body>
 </html>
